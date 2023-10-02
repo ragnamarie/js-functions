@@ -7,7 +7,9 @@ console.log("Exercise 1:");
 */
 
 // Uncomment the next line of code and figure out why it does not work:
-// logText;
+
+logText();
+// Paranthesis were missing
 
 function logText() {
   console.log("This text does not appear. Why?");
@@ -37,7 +39,13 @@ greetMary();
 
 // --v-- write your code here --v--
 
-function greet() {}
+function greet(name) {
+  console.log("Welcome " + name + ", good to see you again!");
+}
+
+greet("Alice");
+greet("Bob");
+greet("Mary");
 
 // --^-- write your code here --^--
 
