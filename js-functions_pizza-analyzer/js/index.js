@@ -49,7 +49,6 @@ function updateOutputColor(size1, size2) {
   const area1 = (size1 / 2) ** 2 * Math.PI;
   const area2 = (size2 / 2) ** 2 * Math.PI;
   const pizzaGain = ((area2 - area1) / area1) * 100;
-
   if (pizzaGain >= 0) {
     outputSection.style.backgroundColor = "var(--green)";
   } else {
