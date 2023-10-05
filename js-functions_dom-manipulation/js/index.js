@@ -11,28 +11,34 @@ We want to add some functionality to the buttons on this page. When pressing a b
   3: Use the two functions in the event listeners of the buttons to color in the box when the button is clicked.
 */
 
+//removes all colors from big box
+function removeAllColors() {
+  box.classList.remove("red", "blue", "green", "gray");
+}
+
+function addColor(color) {
+  box.classList.add(color);
+}
+
+//adds and removes red to and from big box
 redButton.addEventListener("click", () => {
-  // use your functions to
-  // - remove all classes
-  // - then add the class name: "red"
+  removeAllColors();
+  addColor("red");
 });
 
+//adds and removes blue to and from big box
 blueButton.addEventListener("click", () => {
-  // use your functions to
-  // - remove all classes
-  // - then add the class name: "blue"
+  removeAllColors();
+  addColor("blue");
 });
 
+//adds and removes green to and from big box
 greenButton.addEventListener("click", () => {
-  // use your functions to
-  // - remove all classes
-  // - then add the class name: "green"
+  removeAllColors();
+  addColor("green");
 });
 
 grayButton.addEventListener("click", () => {
-  // use your functions to
-  // - remove all classes
-  // - then add the class name: "gray"
+  removeAllColors();
+  addColor("gray");
 });
-
-// Write your two functions below:
